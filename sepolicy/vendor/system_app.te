@@ -2,4 +2,6 @@
 allow system_app vendor_sysfs_graphics:file { getattr open read };
 
 # allow system apps to read battery status
-r_dir_file(system_app, sysfs_battery_supply)
+r_dir_file(system_app, sysfs_battery_supply);
+allow system_app sysfs_battery_supply:dir search;
+allow system_app sysfs_battery_supply:file { read open getattr };
