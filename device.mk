@@ -18,7 +18,7 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-blaze \
+    $(LOCAL_PATH)/overlay-corvus \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -461,12 +461,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel
-    
-# Sounds (default)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=Atria.ogg \
-    ro.config.notification_sound=Ceres.ogg \
-    ro.config.alarm_alert=Carbon.ogg
 
 # Telephony
 PRODUCT_PACKAGES += \

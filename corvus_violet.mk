@@ -9,7 +9,7 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 IS_PHONE := true
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -20,14 +20,14 @@ TARGET_USE_PIXEL_CHARGER := true
 $(call inherit-product, vendor/ANXCamera/config.mk)
 
 #Gapps
-WITH_GAPPS := true
+USE_GAPPS := true
 
 #Blaze
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := 尺りﾒ55 
+RAVEN_LAIR := Official
+CORVUS_MAINTAINER := Fosslover_Rdx55
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := blaze_violet
+PRODUCT_NAME := corvus_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
